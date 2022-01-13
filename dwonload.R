@@ -3,11 +3,7 @@ acc = read.csv("Corporate/UK_accounts.csv")
 acc$Account = as.character(acc$Account)
 acc = subset(acc, !is.na(Account))
 
-TwitterTokens = create_token(app = "my_app",
-                             consumer_key = "9wGggmqWS5MADrH7n07gGuBm4", 
-                             consumer_secret = "Z6GrgY6EY9B0wZuTKjSlMJ6G2s2qNMNgrVL7FGfPJh9hSEcZtU",
-                             access_token = "920713349243047936-wNEhOU1dlpnxfDrcK6K1r7AN4ur02ys",
-                             access_secret = "R5e7D7leiavqWQVEUwSYd17xdJq7yTlhyI4WXu0N4gtIG")
+TwitterTokens = create_token()#Enter own token codess
 
 comb_df = NULL
 summary_df = NULL
